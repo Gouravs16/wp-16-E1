@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Gallery</title> 
+<style> 
+body { 
+font-family: Arial, sans-serif; 
+margin: 0; 
+padding: 20px; 
+background-color: lightyellow; 
+h1 { 
+text-align: center; 
+display: inline-block; 
+padding-left: 600px; 
+padding-right: 630px; 
+background-color: white; 
+} 
+} 
+.gallery 
+display: grid; 
+grid-template-columns: repeat(auto-fill, minmax (400px, 1fr)); 
+gap: 15px; 
+.gallery img { 
+width: 100%; 
+height: 300px; 
+object-fit: cover; 
+border: 4px solid #ccc; 
+border-radius: 8px;
+transition: transform 0.35, border-color 0.3s; 
+} 
+.gallery img:hover { 
+transform: scale(1.05); 
+border-color: blue; 
+} 
+.Caption { 
+text-align: center; 
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+display: inline-block; 
+padding-left:100px; 
+} 
+</style> 
+</head> 
+<body> 
+<h1>Image Gallery</h1> 
+<div class="gallery"> 
+  
+<div><img src=" https://static.vecteezy.com/system/resources/thumbnails/026/992/343/small_2x/classic-modified-car-with-dark-smokie-background-ai-generative-free-photo.jpg" alt="Car 1"><div class="Caption">Car 3</div></div> 
+<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Y3IclwsmEPQD6xcPVIuM6NueTpBTPUcwoQ&s" alt="Car 2"><div class="Caption">Car 4</div></div> 
+<div><img src="https://img.lovepik.com/photo/48007/1912.jpg_wh860.jpg" alt="Car 5"><div class="Caption">Car 3</div></div> 
+<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTceajNiuYiTJbwvVkIXEfyO_hndxVt3s4spQ&s" alt="Car 4"><div class="Caption">Car 6</div></div> 
+</div> 
+</body> 
+</html>
